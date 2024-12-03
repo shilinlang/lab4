@@ -38,6 +38,8 @@ int IDatabase::addNewPatient()
     curRec.setValue("ID",QUuid::createUuid().toString(QUuid::WithoutBraces));
 
     patientTabModel->setRecord(curRecNo,curRec);
+    patientTabModel->setData(patientTabModel->index(curRecNo, patientTabModel->fieldIndex("CREATEDTIMESTAMP")),
+                             QDateTime::currentDateTime().toString("yyyy-MM-dd"));
 
     return curIndex.row();
 }
