@@ -148,6 +148,13 @@
      </property>
     </spacer>
    </item>
+   <item>
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>郎世林 2022414040221</string>
+     </property>
+    </widget>
+   </item>
   </layout>
  </widget>
  <resources/>
